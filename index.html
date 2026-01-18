@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StyleStore - Интернет-магазин одежды</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Style<span>Store</span></h1>
+        </div>
+
+        <!-- Поиск -->
+        <div class="search-box">
+          <input type="text" placeholder="Поиск товаров..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Иконки -->
+        <div class="header-icons">
+          <a href="#" class="icon"><i class="fas fa-user"></i></a>
+          <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+          <a href="#" class="icon cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Навигация -->
+      <nav>
+        <ul class="container">
+          <li><a href="#" class="active">Главная</a></li>
+          <li><a href="#">Женщинам</a></li>
+          <li><a href="#">Мужчинам</a></li>
+          <li><a href="#">Детям</a></li>
+          <li><a href="#">Новинки</a></li>
+          <li><a href="#">Акции</a></li>
+          <li><a href="#">Бренды</a></li>
+          <li><a href="#">О нас</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Баннер -->
+    <section class="hero">
+      <div class="container">
+        <h2>Стильная одежда на каждый день</h2>
+        <p>Новая коллекция 2024 уже в продаже</p>
+        <a href="#" class="btn">Смотреть новинки</a>
+      </div>
+    </section>
+
+    <!-- Категории -->
+    <section class="categories">
+      <div class="container">
+        <h2>Категории</h2>
+        <div class="category-grid">
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+              alt="Женская одежда"
+            />
+            <div class="category-info">
+              <h3>Женщинам</h3>
+              <a href="#">Смотреть <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1520975916090-3105956dac38?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+              alt="Мужская одежда"
+            />
+            <div class="category-info">
+              <h3>Мужчинам</h3>
+              <a href="#">Смотреть <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60"
+              alt="Детская одежда"
+            />
+            <div class="category-info">
+              <h3>Детям</h3>
+              <a href="#">Смотреть <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="products">
+      <div class="container">
+        <h2>Популярные товары</h2>
+        <div class="product-grid" id="product-grid">
+          <!-- Товары будут добавляться через JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+      <div class="container">
+        <div class="feature">
+          <i class="fas fa-truck"></i>
+          <h3>Бесплатная доставка</h3>
+          <p>При заказе от 5000 ₽</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-undo"></i>
+          <h3>Возврат 14 дней</h3>
+          <p>Простой процесс возврата</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Безопасная оплата</h3>
+          <p>Гарантия безопасности</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-headset"></i>
+          <h3>Поддержка 24/7</h3>
+          <p>Всегда готовы помочь</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+      <div class="container">
+        <div class="footer-section">
+          <h3>StyleStore</h3>
+          <p>Интернет-магазин модной одежды для всей семьи</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Информация</h4>
+          <ul>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Возврат</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Категории</h4>
+          <ul>
+            <li><a href="#">Женщинам</a></li>
+            <li><a href="#">Мужчинам</a></li>
+            <li><a href="#">Детям</a></li>
+            <li><a href="#">Новинки</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Контакты</h4>
+          <ul>
+            <li><i class="fas fa-phone"></i> 8 (800) 123-45-67</li>
+            <li><i class="fas fa-envelope"></i> info@stylestore.ru</li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Москва, ул. Примерная, 10
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2024 StyleStore. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <!-- Корзина -->
+    <div class="cart-modal" id="cart-modal">
+      <div class="cart-content">
+        <div class="cart-header">
+          <h2>Корзина</h2>
+          <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+          <!-- Товары в корзине -->
+        </div>
+        <div class="cart-total">
+          <p>Итого: <span id="cart-total-price">0</span> ₽</p>
+          <button class="btn">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
